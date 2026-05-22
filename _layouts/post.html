@@ -1,0 +1,41 @@
+---
+layout: default
+---
+
+<article class="post h-entry">
+  <header class="post-header">
+    <h1 class="post-title p-name">{{ page.title }}</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}">
+        {{ page.date | date: "%B %d, %Y" }}
+      </time>
+      {% if page.categories %}
+        • <span class="post-categories">
+          {% for cat in page.categories %}
+            <a href="{{ '/categories#' | append: cat | relative_url }}">{{ cat }}</a>{% unless forloop.last %}, {% endunless %}
+          {% endfor %}
+        </span>
+      {% endif %}
+    </p>
+  </header>
+
+  <div class="post-content e-content">
+    {{ content }}
+  </div>
+
+  <div class="post-affiliate-notice">
+    <hr>
+    <p><small>
+      <strong>Affiliate Disclosure:</strong> This post contains affiliate links from Amazon. 
+      If you purchase through these links, we earn a small commission at no extra cost to you. 
+      Thank you for supporting our site!
+    </small></p>
+  </div>
+
+  <div class="post-share">
+    <h3>Share this post</h3>
+    <a href="https://twitter.com/intent/tweet?url={{ page.url | absolute_url | url_encode }}&text={{ page.title | url_encode }}" target="_blank">Twitter/X</a> |
+    <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url | url_encode }}" target="_blank">Facebook</a> |
+    <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ page.url | absolute_url | url_encode }}" target="_blank">LinkedIn</a>
+  </div>
+</article>

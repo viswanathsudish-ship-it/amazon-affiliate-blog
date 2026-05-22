@@ -1,0 +1,37 @@
+title: "Fitness Gear Reviews 2026"
+description: "Honest reviews and buying guides for fitness gear, smart home, kitchen gadgets, and tech accessories."
+baseurl: ""
+url: "https://YOUR_USERNAME.github.io"
+author: "Fitness Gear Guru"
+email: "viswanathsudish@gmail.com"
+
+theme: minima
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Fitness Gear Guru"
+
+collections:
+  posts:
+    output: true
+    permalink: /:year/:month/:day/:title/
+
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+sass:
+  style: compressed
+
+google_analytics: # Add your GA tracking ID here
+
+amazon_tracking_id: "fitnessguru23-21"
