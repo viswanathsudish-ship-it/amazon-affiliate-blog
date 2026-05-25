@@ -3,35 +3,77 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ page.title }} | {{ site.title }}</title>
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   {% seo %}
 </head>
 <body>
+  <div class="top-bar">
+    <div class="wrapper">
+      <span class="top-bar-text">Honest Reviews. Real Recommendations. Earn Commissions.</span>
+    </div>
+  </div>
+
   <header class="site-header">
     <div class="wrapper">
-      <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+      <a class="site-brand" href="{{ '/' | relative_url }}">
+        <span class="site-logo">FG</span>
+        <div class="site-title-wrap">
+          <span class="site-title">{{ site.title }}</span>
+          <span class="site-tagline">2026 Buyer's Guides</span>
+        </div>
+      </a>
       <nav class="site-nav">
-        <a href="{{ '/' | relative_url }}">Home</a>
-        <a href="{{ '/about' | relative_url }}">About</a>
-        <a href="{{ '/categories' | relative_url }}">Categories</a>
+        <a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="active"{% endif %}>Home</a>
+        <a href="{{ '/categories' | relative_url }}" {% if page.url == '/categories/' %}class="active"{% endif %}>Categories</a>
+        <a href="{{ '/about' | relative_url }}" {% if page.url == '/about/' %}class="active"{% endif %}>About</a>
       </nav>
+      <button class="mobile-menu-btn" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </header>
 
   <main class="page-content">
-    <div class="wrapper">
-      {{ content }}
-    </div>
+    {{ content }}
   </main>
 
   <footer class="site-footer">
     <div class="wrapper">
-      <p>{{ site.description }}</p>
-      <p class="affiliate-disclosure">
-        <small>Disclosure: This site contains affiliate links. We earn a commission if you purchase through these links at no extra cost to you.</small>
-      </p>
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="footer-logo">FG</span>
+          <p>{{ site.description }}</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <a href="{{ '/' | relative_url }}">Home</a>
+          <a href="{{ '/categories' | relative_url }}">Categories</a>
+          <a href="{{ '/about' | relative_url }}">About</a>
+        </div>
+        <div class="footer-categories">
+          <h4>Top Categories</h4>
+          <a href="{{ '/categories' | relative_url }}#fitness-gear">Fitness Gear</a>
+          <a href="{{ '/categories' | relative_url }}#smart-home">Smart Home</a>
+          <a href="{{ '/categories' | relative_url }}#tech-accessories">Tech Accessories</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="affiliate-disclosure">
+          <strong>Affiliate Disclosure:</strong> This site contains Amazon affiliate links. We earn a small commission when you purchase through our links — at no extra cost to you. Thank you for supporting our work!
+        </p>
+        <p class="copyright">&copy; {{ site.time | date: '%Y' }} {{ site.title }}. All rights reserved.</p>
+      </div>
     </div>
   </footer>
+
+  <script>
+    document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+      document.querySelector('.site-nav').classList.toggle('open');
+    });
+  </script>
 </body>
 </html>
