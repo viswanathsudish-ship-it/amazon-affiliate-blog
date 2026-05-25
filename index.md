@@ -14,7 +14,7 @@ layout: default
       <p>Honest, in-depth reviews and buying guides for fitness gear, smart home, kitchen gadgets, and tech accessories. We test so you don't have to.</p>
       <div class="hero-buttons">
         <a href="#latest-posts" class="btn btn-primary">Browse Latest Reviews</a>
-        <a href="/categories" class="btn btn-secondary">View Categories</a>
+        <a href="{{ '/categories' | relative_url }}" class="btn btn-secondary">View Categories</a>
       </div>
     </div>
   </div>
@@ -47,7 +47,7 @@ layout: default
   <div class="wrapper">
     <div class="section-header">
       <h2>Latest <span>Reviews</span></h2>
-      <a href="/categories" class="view-all">View All →</a>
+      <a href="{{ '/categories' | relative_url }}" class="view-all">View All →</a>
     </div>
     <div class="post-grid">
       {% for post in site.posts limit:6 %}
@@ -90,27 +90,27 @@ layout: default
       <h2>Browse by <span>Category</span></h2>
     </div>
     <div class="category-grid">
-      <a href="/categories#fitness-gear" class="category-card">
+      <a href="{{ '/categories' | relative_url }}#fitness-gear" class="category-card">
         <div class="category-icon">💪</div>
         <h3>Fitness Gear</h3>
         <span>Equipment &amp; Accessories</span>
       </a>
-      <a href="/categories#smart-home" class="category-card">
+      <a href="{{ '/categories' | relative_url }}#smart-home" class="category-card">
         <div class="category-icon">🏠</div>
         <h3>Smart Home</h3>
         <span>Devices &amp; Automation</span>
       </a>
-      <a href="/categories#kitchen-gadgets" class="category-card">
+      <a href="{{ '/categories' | relative_url }}#kitchen-gadgets" class="category-card">
         <div class="category-icon">🍳</div>
         <h3>Kitchen Gadgets</h3>
         <span>Tools &amp; Appliances</span>
       </a>
-      <a href="/categories#tech-accessories" class="category-card">
+      <a href="{{ '/categories' | relative_url }}#tech-accessories" class="category-card">
         <div class="category-icon">📱</div>
         <h3>Tech Accessories</h3>
         <span>Gadgets &amp; Gear</span>
       </a>
-      <a href="/categories#outdoors" class="category-card">
+      <a href="{{ '/categories' | relative_url }}#outdoors" class="category-card">
         <div class="category-icon">🏕️</div>
         <h3>Outdoors</h3>
         <span>Camping &amp; Hiking</span>
