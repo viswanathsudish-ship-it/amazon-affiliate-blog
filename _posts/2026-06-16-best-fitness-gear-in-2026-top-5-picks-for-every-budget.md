@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Best Fitness Gear in 2026: Top 5 Picks for Every Budget"
-date: 2026-06-16 12:45:35 
+date: 2026-06-16 12:46:50 
 categories:
   - general
 tags:
