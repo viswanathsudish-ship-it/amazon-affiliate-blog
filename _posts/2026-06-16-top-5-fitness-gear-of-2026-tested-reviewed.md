@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Top 5 Fitness Gear of 2026 (Tested & Reviewed)"
-date: 2026-06-16 12:46:50 
+date: 2026-06-16 12:47:23 
 categories:
   - general
 tags:
