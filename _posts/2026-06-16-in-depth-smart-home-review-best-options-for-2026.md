@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "In-Depth Smart Home Review: Best Options for 2026"
-date: 2026-06-16 13:42:51 
+date: 2026-06-16 13:58:08 
 categories:
   - general
 tags:
