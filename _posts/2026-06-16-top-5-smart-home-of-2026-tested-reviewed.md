@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Top 5 Smart Home of 2026 (Tested & Reviewed)"
-date: 2026-06-16 13:58:08 
+date: 2026-06-16 14:02:19 
 categories:
   - general
 tags:
