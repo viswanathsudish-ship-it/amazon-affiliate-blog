@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How to Use Shopify to rank #1 on Google (Step-by-Step Guide)"
-date: 2026-06-16 12:47:23 
+date: 2026-06-16 13:31:49 
 categories:
   - general
 tags:
