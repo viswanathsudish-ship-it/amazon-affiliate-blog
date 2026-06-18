@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Honest Smart Home Reviews: Top 5 Tested in 2026"
-date: 2026-06-18 09:00:48 
+date: 2026-06-18 09:01:01 
 categories:
   - general
 tags:
