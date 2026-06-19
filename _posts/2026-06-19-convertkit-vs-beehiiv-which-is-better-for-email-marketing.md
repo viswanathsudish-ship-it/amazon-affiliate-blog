@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "ConvertKit vs Beehiiv: Which is Better for email marketing?"
-date: 2026-06-19 09:29:00 
+date: 2026-06-19 09:32:32 
 categories:
   - general
 tags:

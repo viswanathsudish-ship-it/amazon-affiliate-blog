@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The Ultimate Fitness Gear Buying Guide for 2026"
-date: 2026-06-19 09:29:00 
+date: 2026-06-19 09:32:32 
 categories:
   - general
 tags:
