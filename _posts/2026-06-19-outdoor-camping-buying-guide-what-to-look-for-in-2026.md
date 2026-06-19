@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Outdoor & Camping Buying Guide: What to Look For in 2026"
-date: 2026-06-19 09:01:09 
+date: 2026-06-19 09:01:11 
 categories:
   - general
 tags:
